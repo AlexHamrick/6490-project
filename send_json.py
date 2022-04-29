@@ -2,7 +2,7 @@ import socket
 from encryption import encrypt, decrypt
 import argparse
 
-# TAKEN FROM https://github.com/softScheck/tplink-smartplug/blob/master/tplink_smartplug.py
+# presets TAKEN FROM https://github.com/softScheck/tplink-smartplug/blob/master/tplink_smartplug.py
 presets  = {'info'     : '{"context":{"source":"46a4d58b-6279-432c-ae23-e115c2db8354"},"system":{"get_sysinfo":{}}}',
             'on'       : '{"context":{"source":"46a4d58b-6279-432c-ae23-e115c2db8354"},"system":{"set_relay_state":{"state":1}}}',
             'off'      : '{"context":{"source":"46a4d58b-6279-432c-ae23-e115c2db8354"},"system":{"set_relay_state":{"state":0}}}',
