@@ -12,7 +12,5 @@ def main():
     for pkt in packets:
         print(pkt)
 
-
-
 if __name__ == "__main__":
     main()
