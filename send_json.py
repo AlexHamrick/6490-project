@@ -24,7 +24,7 @@ def main():
     parser.add_argument('-p', '--port', help="The port number for the TPLink device", type=int, default=9999)
 
     g = parser.add_mutually_exclusive_group(required=True)
-    g.add_argument("-c", "--command", help="Premade commands that are available: ".join(presets), choices=presets)
+    g.add_argument("-c", "--command", help="List of preset commands to run: "+" , ".join(presets), choices=presets)
     g.add_argument('-j', '--json', help="Json string to send to the device")
     args = parser.parse_args()
 
